@@ -43,7 +43,7 @@ for i, browser in enumerate(browsers):
 for t in thread_list:
 	t.join()
 
-print ("all browsers ready")
+
 for i, b in enumerate(browsers_waiting):
 	print ("browser %s's title: %s" % (b["data"]["name"], b["driver"].title))
 	b["driver"].quit()
