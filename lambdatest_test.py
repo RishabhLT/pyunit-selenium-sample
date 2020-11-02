@@ -7,17 +7,17 @@ username = os.environ.get("LT_USERNAME")
 access_key = os.environ.get("LT_ACCESS_KEY")
 
 class FirstSampleTest(unittest.TestCase):
-
-    # setUp runs before each test case
+    # Generate capabilites from here: https://www.lambdatest.com/capabilities-generator/
+    # setUp runs before each test case and 
     def setUp(self):
         desired_caps = {
-            "build": 'unittest sample build',
-            "name": 'Py-unittest',
-            "platform": 'OS X El Capitan',
-            "browserName": 'chrome',
-            "version": '81.0',
-            "console": 'true',
-            "network":'true'
+            "build": 'PyunitTest sample build', # Change your build name here
+            "name": 'Py-unittest', # Change your test name here
+            "platform": 'OS X El Capitan', # Change your OS version here
+            "browserName": 'chrome', # Change your browser here
+            "version": '81.0', # Change your browser version here
+            "console": 'true', # Enable or disable console logs
+            "network":'true'   # Enable or disable network logs
         }
         self.driver = webdriver.Remote(
            command_executor="http://{}:{}@hub.lambdatest.com:80/wd/hub".format(username, access_key),
@@ -28,6 +28,7 @@ class FirstSampleTest(unittest.TestCase):
     def tearDown(self):
         self.driver.quit()
 
+    # """ You can write the test cases here """
     def test_unit_user_should_able_to_add_item(self):
         # try:
         driver = self.driver
