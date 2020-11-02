@@ -25,7 +25,7 @@ $ source lambdatest.env
 
 You can genegate the test capabilites at (https://www.lambdatest.com/capabilities-generator/) and choose **Python** as the language. 
 
-Now, can setup the capabilites of the test in the `lambdatest.py` file at: `
+Now, can setup the capabilites of the test in the `single_test.py` file at: 
 
 ```
 ln 13: desired_caps = {
@@ -40,12 +40,24 @@ ln 21:        }
 
 ```
 
-### Step 3: Running Tests
-To start the test Run following command: <br/><br/>
-    ```
-    $ python lambdatest_test.py 
-    ```
+You can setup the capabilites of your test in the `parallel_test.py` file at: 
 
+```
+browsers = [
+    {"build": 'PyunitTest sample build',"name": "Test 1", "platform": "Windows 10","browserName": "Chrome", "version": "86.0"},
+    {"build": 'PyunitTest sample build',"name": "Test 2", "platform": "Windows 10","browserName": "Firefox", "version": "82.0"}
+]
+```
+
+### Step 3: Running Tests
+To start a single test Run following command: <br/><br/>
+    ```
+    $ python single_test.py 
+    ```
+To start a parallel test Run the following command: <br/><br/>
+```
+$ python parallel_test.py
+```
 
 ## About LambdaTest
 
