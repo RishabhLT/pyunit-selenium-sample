@@ -51,9 +51,11 @@ browsers = [
 
 ### Step 3: Running Tests
 To start a single test Run following command: <br/><br/>
-    ```
-    $ python single_test.py 
-    ```
+
+```
+$ python single_test.py 
+```
+
 To start a parallel test Run the following command: <br/><br/>
 ```
 $ python parallel_test.py
