@@ -14,7 +14,7 @@
     ```
 
 ### Step 2: Running Tests
-To start the test Run following command:
+To start the test Run following command: <br/>
     ```
     $ python lambdatest_test.py or nosetests test_sample.py
     ```
