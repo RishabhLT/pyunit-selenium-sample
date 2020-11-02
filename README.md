@@ -43,7 +43,7 @@ ln 21:        }
 ### Step 3: Running Tests
 To start the test Run following command: <br/><br/>
     ```python
-    $ python lambdatest_test.py or nosetests test_sample.py
+    $ python lambdatest_test.py 
     ```
 
 
