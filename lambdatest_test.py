@@ -13,9 +13,11 @@ class FirstSampleTest(unittest.TestCase):
         desired_caps = {
             "build": 'unittest sample build',
             "name": 'Py-unittest',
-            "platform": 'Windows 10',
-            "browserName": 'firefox',
-            "version": '73'
+            "platform": 'OS X El Capitan',
+            "browserName": 'chrome',
+            "version": '81.0',
+            "console": 'true',
+            "network":'true'
         }
         self.driver = webdriver.Remote(
            command_executor="http://{}:{}@hub.lambdatest.com:80/wd/hub".format(username, access_key),
